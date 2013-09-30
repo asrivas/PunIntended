@@ -17,9 +17,37 @@ def is_prime_p(n):
     return False
 
 
-# TODO greatest common denominator
+# http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.1384&rep=rep1&type=pdf
+# fast determinisitic primality testing based on the above paper
+def is_prime_fast(n):
+    # check if n is a power other than a first power using newton iteration
+    # if it is, return false
+    
+    # let D = ceil(log(n) ^2)
+    # find a period system (r1,q1), (r2,q2), ..., (rk, qk) for n
+    # with d:= q1q2...qk >= D and d = O(D)
+    
+    # let B = floor(sqrt(d) log(n)) 
+    # see if n has a prime factor in [1,B]
+    
+    # attempt to find a monic polynomial f in (Z/nZ)[x] of degree d
+    
+    # for integers a, 1 <= a <= b, check if (x+a)^n is congruent to x^n + a (mod n, f(x))
+    # if a congruence fails, declare n composite. otherwise, n is prime
+    return False
+
+
+# http://en.wikipedia.org/wiki/Adleman%E2%80%93Pomerance%E2%80%93Rumely_primality_test
+def is_prime_cyclotopy(n):
+    return False
+
+
+# greatest common divisor using euclid method
 def gcd(a, b):
-    return 1
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
 
 
 # relative primeness
