@@ -5,10 +5,10 @@ require 'tmhOAuth.php'; // Get it from: https://github.com/themattharris/tmhOAut
 // notice the slight name difference in the last two items)
 
 $connection = new tmhOAuth(array(
-  'consumer_key' => '',
-	'consumer_secret' => '',
-	'user_token' => '', //access token
-	'user_secret' => '' //access token secret
+  'consumer_key' => 'YKTXstFb5r4hT13viG14jg',
+	'consumer_secret' => 'U0CbCz09MIlIDG7NV3saCHUH4hkuHvZGnCKNDFHLI',
+	'user_token' => '40138058-gp4CAW6d0aKATHRc07EyAr7bq9FmuBGAo4QQeYQAz', //access token
+	'user_secret' => 'gI0Ojctm9xWDAMFahjiVvS4I4nKcp2A9mWwBQXgj8' //access token secret
 ));
 
 // set up parameters to pass
